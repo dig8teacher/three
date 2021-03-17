@@ -37,4 +37,4 @@ jobs:
           java variabletwo
           javac BankAccountTester.java
           jar cfm BankAccountTester.jar manifest.txt BankAccountTester.class BankAccount.class
-          java -jar BankAccountTester
+          java -jar BankAccountTester.jar
