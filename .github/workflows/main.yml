@@ -36,8 +36,7 @@ jobs:
         
       - name: more
         run:  javac variabletwo.java
-        
-       - name: more2
+      - name: more2  
         run:  java variabletwo
           echo Add other actions to build,
           echo test, and deploy your project.
