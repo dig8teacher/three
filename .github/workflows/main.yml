@@ -37,15 +37,11 @@ jobs:
       - name: Run a multi-line script
         run:  javac variabletwo.java
         
-      - name: more2
         run:  java variabletwo
    
-      - name:  more2  
         run:  javac BankAccountTester.java
       
-      - name: more 3
         run: jar cfm BankAccountTester.jar manifest.txt BankAccountTester.class BankAccount.class
         
-      - name: more 4  
         run: java -jar BankAccountTester.jar
         
