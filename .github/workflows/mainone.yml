@@ -39,4 +39,4 @@ jobs:
           jar cfm BankAccountTester.jar manifest.txt BankAccountTester.class BankAccount.class
           java -jar BankAccountTester.jar
           docker build -t ba .
-          docker images
+          docker run ba
