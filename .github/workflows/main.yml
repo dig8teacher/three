@@ -28,6 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: javac variableone.java
+        
           
 
       # Runs a set of commands using the runners shell
@@ -36,7 +37,13 @@ jobs:
         
       - name: more
         run:  javac variabletwo.java
-      - name: more2  
+   
+      - name:  more2  
         run:  java variabletwo
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      
+      - name: more 3
+        run: javac BankAccountTester.java
+        
+      - name: more 4  
+        run: java BankAccountTester 
+        
