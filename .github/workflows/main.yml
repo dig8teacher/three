@@ -29,7 +29,7 @@ jobs:
       - name: Run a one-line script
         run: javac variableone.java
       - name: more than one line  
-        run: java variablone 
+        run: java variableone 
         
           
 
