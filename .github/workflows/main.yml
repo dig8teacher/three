@@ -25,18 +25,21 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
   # Runs a single command using the runners shell
-    -	name: Run a one-line script
-  run: |  
-           javac variableone.java
-           java variableone
-        # Runs a set of commands using the runners shell
+  - name: Run a one-line script
+    run: javac variableone.java
+  - name: more1
+     run: javac variableone.java
+  - name: more2 
+     run: java variableone
+   # Runs a set of commands using the runners shell
 	
   - name: run a lot of commands
-   run: javac variabletwo.java
-    -    name:	 
-         run: java variabletwo
-    -    name: more3
-          run: javac BankAccountTester.java
+     run: javac variabletwo.java
+  - name: more3	 
+     run: java variabletwo
+  - name: more4
+     run: javac BankAccountTester.java
+   - name: more5    
        run: |
 	 jar cfm BankAccountTester.jar manifest.txt BankAccountTester.class BankAccount.class
 	 java -jar BankAccountTester.jar
