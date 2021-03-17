@@ -36,7 +36,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: run a lot of commands
       
-      - run: | 
+        run: | 
       	
 	javac variabletwo.java
 
