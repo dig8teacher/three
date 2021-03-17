@@ -1,4 +1,4 @@
-FROM java:8
+FROM adoptopenjdk/openjdk11:latest
 WORKDIR /
 ADD BankAccountTester.jar BankAccountTester.jar
 EXPOSE 8080
