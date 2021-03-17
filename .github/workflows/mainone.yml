@@ -35,5 +35,6 @@ jobs:
           java variableone
           javac variabletwo.java
           java variabletwo
-          javac threestrings.java
-          java threestrings
+          javac BankAccountTester.java
+          jar cfm BankAccountTester.jar manifest.txt BankAccountTester.class BankAccount.class
+          java -jar BankAccountTester
