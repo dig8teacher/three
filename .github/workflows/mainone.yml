@@ -40,5 +40,7 @@ jobs:
           java -jar BankAccountTester.jar
           javac testbackAround.java
           java testbackAround
+          javac classDataArray.java
+          java ClassDataApp
           docker build -t ba .
           docker run ba
