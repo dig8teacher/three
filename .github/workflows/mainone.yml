@@ -38,5 +38,7 @@ jobs:
           javac BankAccountTester.java
           jar cfm BankAccountTester.jar manifest.txt BankAccountTester.class BankAccount.class
           java -jar BankAccountTester.jar
+          javac testbackAround.java
+          java testbackAround
           docker build -t ba .
           docker run ba
