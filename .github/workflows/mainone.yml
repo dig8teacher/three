@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: macos-latest
+    runs-on: ubuntu-18.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -38,5 +38,5 @@ jobs:
           javac BankAccountTester.java
           jar cfm BankAccountTester.jar manifest.txt BankAccountTester.class BankAccount.class
           java -jar BankAccountTester.jar
-          #docker build -t ba .
-          #docker run ba
+          docker build -t ba .
+          docker run ba
